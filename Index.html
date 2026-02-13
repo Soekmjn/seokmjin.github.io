@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Eternal Archive | #KensaOnTop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="step-container active" id="s-0">
+        <div class="glass-card">
+            <h1 class="elegant-title">The Prelude</h1>
+            <p class="subtitle">Nyalakan soundtrack perjalanan kita.</p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3XFiwrpEVOjJuga9JIuiGf?utm_source=generator" width=" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="verification">
+                <p>Buka lagunya di playlistnya ya mut.</p>
+                <div class="btn-group">
+                    <button class="btn-main" onclick="nextSlide()">Ya, Mulai</button>
+                    <button class="btn-alt" onclick="alert('Putar dulu musiknya, Sayang.')">Belum</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="step-container" id="s-1">
+        <h2 class="elegant-title">The Masterpiece</h2>
+        <div class="img-frame"><img src="dia.jpg" class="photo-main"></div>
+        <div class="scroll-card">
+            <p class="pov-text">
+                Kamu tidak tiba-tiba hadir, aku hanya mulai melihatmu dengan cara yang berbeda. <br><br>
+                Awalnya semuanya terasa biasa saja. Kamu ada di sekitar, menjadi bagian dari suasana yang indah itu, menyatu dengan hari-hari yang berjalan seperti biasanya. Sampai suatu saat, tanpa alasan yang jelas, pandanganku berhenti lebih lama dari seharusnya. Di antara banyak hal yang bisa kulihat, entah kenapa mataku justru memilihmu. <br><br>
+                Dan sejak itu, aku mulai benar-benar melihat. <br><br>
+                Di mataku, kamu itu imut dengan cara yang alami. Manis tanpa perlu dibuat-buat. Ada sisi menggemaskan dalam caramu tersenyum, dalam ekspresi kecil yang mungkin bahkan tidak kamu sadari. Semakin aku memperhatikan, semakin aku merasa ada sesuatu yang sulit dijelaskan, sesuatu yang membuatku ingin terus melihatmu. <br><br>
+                Mungkin benar kata orang tentang jatuh cinta pada pandangan pertama. Karena aku yang jatuh lebih dulu. I fell first, and I fell harder. <br><br>
+                Indah tentangmu itu bukan hanya tentang rupa. Indah tentangmu adalah keseluruhan dirimu. Cara kamu membawa diri, cara kamu berbicara, cara kamu hadir dengan begitu tenang. Kadang aku sampai tidak mengerti, kenapa bisa ada sosok sesempurna dirimu di antara semua hal yang terasa biasa. <br><br>
+                Dan sebenarnya, aku tidak pernah benar-benar diam. Di balik sikap tenangku, aku memperhatikan jejak langkahmu. Cara kamu berjalan, caramu berinteraksi, detail-detail kecil yang mungkin luput dari orang lain. Dari situlah rasa ini tumbuh, pelan tapi pasti. <br><br>
+                Aku mungkin baru melihatmu dengan cara yang berbeda. Tapi sejak saat itu, hatiku seolah sudah tidak ingin melihat ke arah lain lagi. 🤍
+            </p>
+        </div>
+        <button class="btn-main" onclick="nextSlide()">Trace Memories ↓</button>
+    </div>
+
+    <div id="dynamic-slides"></div>
+
+    <div class="step-container" id="s-10">
+        <h2 id="alchemy-title" class="elegant-title">Fragmen Abstrak</h2>
+        <div class="paper-alchemy-box" id="paper-canvas"></div>
+        <button id="btn-stitch" class="btn-main" onclick="stitchPaper()">Sempurnakan</button>
+        <button id="btn-next-alchemy" class="btn-main" style="display:none;" onclick="nextSlide()">Lanjutkan ↓</button>
+    </div>
+
+    <div class="step-container" id="s-11">
+        <div class="giant-ring-box"><div class="ring-glow">💍</div></div>
+        <h2 class="elegant-title">Tired of Playing...</h2>
+        <p class="subtitle">This Valentine’s Day, I’m claiming you as mine… so, will you be my lover?</p>
+        <div class="proposal-actions">
+            <button class="btn-main yes-btn" onclick="nextSlide()">Yes, I will 💖</button>
+            <button id="rejectBtn" class="btn-main no-btn">No, maybe not</button>
+        </div>
+    </div>
+
+    <div class="step-container" id="s-16">
+        <h2 class="elegant-title">20 Reasons</h2>
+        <div id="chat-area" class="chat-viewport"></div>
+        <div class="chat-ui">
+            <span id="counter">0/20</span>
+            <button class="btn-main" onclick="addReason()">Send Heart ❤️</button>
+        </div>
+    </div>
+
+    <div class="step-container" id="s-17">
+        <h2 class="elegant-title gold">Eternal Letter</h2>
+        <div class="img-frame"><img src="valentine.jpg" class="photo-main"></div>
+        <div class="scroll-card">
+            <p class="letter-text">
+                Selamat Hari Valentine, Sayangku. <br><br>
+                On our first Valentine’s Day, I don’t just want to say “Happy Valentine’s.” I want you to know that since we started this relationship, I’ve been serious about you. I love how you make me smile for no reason, and I want to keep being close to you, experiencing every moment with you.<br><br>
+                I don’t just want to be your boyfriend; I want to be the one who makes you feel safe, valued, and constantly reminded that you’re special.<br><br>
+                So, on this first Valentine’s, I just want to say… I’m glad we started this now, and I want to make every moment with you meaningful. You’re clearly mine, and I don’t want to be half-hearted about this feeling. Let’s build a beautiful love story, together.
+            </p>
+        </div>
+        <button class="btn-main" onclick="nextSlide()">Penutup ↓</button>
+    </div>
+
+    <div class="step-container" id="s-18">
+        <div class="end-card">
+            <h1 class="elegant-title gold">Endless Love.</h1>
+            <div class="final-tags">
+                <span>#KensaOnTop</span>
+                <span>#KenSayangAsa</span>
+                <span>#AsaSayangKen</span>
+                <span>#MaybeMyAnu</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

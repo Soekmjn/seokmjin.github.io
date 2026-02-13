@@ -1,0 +1,50 @@
+:root { --main: #a10000; --gold: #d4af37; --dark: #050505; --glass: rgba(20, 0, 0, 0.7); }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background: var(--dark); color: #fff; font-family: 'Montserrat', sans-serif; overflow: hidden; }
+
+.elegant-title { font-family: 'Cinzel', serif; color: var(--main); letter-spacing: 4px; text-transform: uppercase; text-align: center; }
+.gold { color: var(--gold); }
+.subtitle { font-size: 0.8rem; letter-spacing: 2px; opacity: 0.7; margin: 10px 0; }
+
+.step-container { 
+    position: fixed; top:0; left:0; width:100%; height:100%; 
+    display:none; flex-direction:column; align-items:center; justify-content:center; 
+    padding: 30px; background: radial-gradient(circle, #200000 0%, #050505 100%);
+}
+.step-container.active { display:flex; z-index: 10; animation: fadeIn 1.2s ease forwards; }
+
+.img-frame { border: 1px solid var(--main); padding: 5px; background: #000; margin-bottom: 20px; box-shadow: 0 0 25px rgba(161, 0, 0, 0.4); }
+.photo-main { max-width: 85vw; max-height: 45vh; object-fit: contain; filter: contrast(1.1); }
+
+.scroll-card { 
+    background: var(--glass); backdrop-filter: blur(10px); padding: 20px; border-radius: 5px;
+    width: 90%; max-width: 500px; max-height: 20vh; overflow-y: auto; 
+    border-left: 3px solid var(--main); line-height: 1.7; font-weight: 300;
+}
+
+.btn-main { background: var(--main); color: #fff; border: none; padding: 12px 35px; border-radius: 2px; font-size: 0.7rem; letter-spacing: 2px; cursor: pointer; margin-top: 20px; transition: 0.3s; }
+.btn-main:hover { background: #ff0000; box-shadow: 0 0 15px var(--main); }
+.btn-alt { background: transparent; border: 1px solid var(--main); color: var(--main); padding: 12px 35px; cursor: pointer; margin-left: 10px; }
+
+/* Alchemy Shred */
+.paper-alchemy-box { position: relative; width: 300px; height: 300px; background: #000; border: 1px solid var(--main); }
+.paper-strip { position: absolute; background-size: 300px 300px; transition: 2.5s cubic-bezier(0.19, 1, 0.22, 1); box-shadow: 2px 2px 5px #000; }
+
+/* Proposal */
+.ring-glow { font-size: 10rem; animation: pulse 2s infinite; filter: drop-shadow(0 0 20px var(--gold)); }
+.proposal-actions { position: relative; width: 100%; height: 100px; margin-top: 20px; }
+#rejectBtn { position: absolute; left: 55%; }
+
+/* Chat */
+.chat-viewport { width: 100%; height: 40vh; position: relative; }
+.chat-msg { position: absolute; background: var(--main); color: #fff; padding: 8px 15px; border-radius: 15px 15px 15px 2px; font-size: 0.75rem; animation: pop 0.4s forwards; }
+
+/* Rain */
+.rain-obj { position: fixed; top: -100px; z-index: 100; pointer-events: none; }
+.rain-img { width: 70px; height: 70px; object-fit: cover; border: 2px solid var(--main); border-radius: 10px; }
+.final-tags { margin-top: 30px; color: var(--main); font-weight: bold; display: flex; flex-direction: column; gap: 5px; }
+
+@keyframes fadeIn { from { opacity: 0; transform: scale(1.05); } to { opacity: 1; transform: scale(1); } }
+@keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
+@keyframes pulse { 0% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.1); opacity: 1; } 100% { transform: scale(1); opacity: 0.8; } }
+@keyframes fallDown { to { transform: translateY(115vh) rotate(360deg); } }
